@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    /* Colors */
+    --color-teamapp-darkblue: #324162;
+    --color-teamapp-grey: #697694;
+    --color-teamapp-blue: #0BBEF2;
+    --color-teamapp-yellow: #FFB200;
+    --color-teamapp-white: #F5F7FA;
+    /* Fonts */  
+    --font-cabin: 'Cabin', sans-serif;
+    /* Breakpoints */
+    --breakpoint-3xl: 121rem; /* 120rem is 1920px */
+}
