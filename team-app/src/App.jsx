@@ -1,9 +1,15 @@
 import './App.css'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <div className='font-cabin'>
-      <h1>Team App</h1>
+        <header>
+            <Hero/>
+        </header>
+        <main>
+            
+        </main>
     </div>
   )
 }
