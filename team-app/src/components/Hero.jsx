@@ -10,7 +10,7 @@ function Hero() {
                         <h1 className='mb-4 max-w-xs text-4xl md:max-w-md md:text-5xl lg:max-w-xl lg:text-6xl/18'>
                             Instant collaboration for remote teams
                         </h1>
-                        <h4 className='mb-12 max-w-sm'>
+                        <h4 className='mb-12 max-w-sm md:text-lg lg:text-xl'>
                             All-in-one place for your remote team to chat,
                             collaborate and track project progress.
                         </h4>
