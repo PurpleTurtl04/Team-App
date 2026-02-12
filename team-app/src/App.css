@@ -5,10 +5,10 @@
     /* Colors */
     --color-teamapp-darkblue: #324162;
     --color-teamapp-grey: #697694;
-    --color-teamapp-blue: #0BBEF2;
-    --color-teamapp-yellow: #FFB200;
-    --color-teamapp-white: #F5F7FA;
-    /* Fonts */  
+    --color-teamapp-blue: #0bbef2;
+    --color-teamapp-yellow: #ffb200;
+    --color-teamapp-white: #f5f7fa;
+    /* Fonts */
     --font-cabin: 'Cabin', sans-serif;
     /* Breakpoints */
     --breakpoint-3xl: 121rem; /* 120rem is 1920px */
