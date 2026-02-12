@@ -17,6 +17,6 @@
 @media (max-width: 640px) {
     /* Tailwind's default 'sm' breakpoint is 640px */
     .bg-shift-left-mobile {
-        background-position: calc(52%) center;
+        background-position: calc(56%) center;
     }
 }

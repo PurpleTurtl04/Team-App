@@ -35,7 +35,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='transition duration-150 hover:text-white/70'
+                            className='hover:text-teamapp-blue/90 transition duration-150'
                         >
                             Product
                         </a>
@@ -43,7 +43,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='transition duration-150 hover:text-white/70'
+                            className='hover:text-teamapp-blue/90 transition duration-150'
                         >
                             Blog
                         </a>
@@ -51,7 +51,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='transition duration-150 hover:text-white/70'
+                            className='hover:text-teamapp-blue/90 transition duration-150'
                         >
                             Contact
                         </a>
@@ -59,7 +59,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='transition duration-150 hover:text-white/70'
+                            className='hover:text-teamapp-blue/90 transition duration-150'
                         >
                             Log In
                         </a>
