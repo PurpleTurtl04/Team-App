@@ -13,3 +13,10 @@
     /* Breakpoints */
     --breakpoint-3xl: 121rem; /* 120rem is 1920px */
 }
+
+@media (max-width: 640px) {
+    /* Tailwind's default 'sm' breakpoint is 640px */
+    .bg-shift-left-mobile {
+        background-position: calc(60%) center;
+    }
+}

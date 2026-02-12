@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function HamburgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,25 +17,25 @@ function HamburgerMenu() {
             >
                 {/* Using a simple div stack for the icon, styled with Tailwind */}
                 <div
-                    className={`bg-teamapp-darkblue h-0.5 w-6 transition duration-300 ease-in-out ${isOpen ? 'translate-y-1.5 rotate-45 transform' : ''}`}
+                    className={`h-0.5 w-6 bg-white transition duration-300 ease-in-out ${isOpen ? 'translate-y-1.5 rotate-45 transform' : ''}`}
                 ></div>
                 <div
-                    className={`bg-teamapp-darkblue my-1 h-0.5 w-6 transition duration-300 ease-in-out ${isOpen ? 'opacity-0' : ''}`}
+                    className={`my-1 h-0.5 w-6 bg-white transition duration-300 ease-in-out ${isOpen ? 'opacity-0' : ''}`}
                 ></div>
                 <div
-                    className={`bg-teamapp-darkblue h-0.5 w-6 transition duration-300 ease-in-out ${isOpen ? '-translate-y-1.5 -rotate-45 transform' : ''}`}
+                    className={`h-0.5 w-6 bg-white transition duration-300 ease-in-out ${isOpen ? '-translate-y-1.5 -rotate-45 transform' : ''}`}
                 ></div>
             </button>
 
             {/* Menu Items (hidden by default on mobile, visible on desktop) */}
             <div
-                className={` ${isOpen ? 'block' : 'hidden'} bg-teamapp-grey/95 absolute top-full right-0 mt-2 w-48 rounded-md p-2 shadow-lg md:static md:mt-0 md:block md:w-auto md:rounded-none md:bg-transparent md:p-0 md:shadow-none`}
+                className={` ${isOpen ? 'block' : 'hidden'} bg-teamapp-darkblue/95 absolute top-full right-0 mt-2 w-48 rounded-md p-2 shadow-lg md:static md:mt-0 md:block md:w-auto md:rounded-none md:bg-transparent md:p-0 md:shadow-none`}
             >
                 <ul className='flex w-full flex-col items-center gap-4 text-white md:flex-row md:items-center md:justify-around md:gap-6 lg:gap-10'>
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-yellow transition duration-150'
+                            className='transition duration-150 hover:text-white/70'
                         >
                             Product
                         </a>
@@ -43,7 +43,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-yellow transition duration-150'
+                            className='transition duration-150 hover:text-white/70'
                         >
                             Blog
                         </a>
@@ -51,7 +51,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-yellow transition duration-150'
+                            className='transition duration-150 hover:text-white/70'
                         >
                             Contact
                         </a>
@@ -59,7 +59,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-yellow transition duration-150'
+                            className='transition duration-150 hover:text-white/70'
                         >
                             Log In
                         </a>
