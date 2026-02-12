@@ -12,7 +12,7 @@ function HamburgerMenu() {
             {/* Hamburger Icon (visible on mobile) */}
             <button
                 onClick={toggleMenu}
-                className='block p-3 md:hidden'
+                className='block py-3 md:hidden'
                 aria-label='Toggle menu'
             >
                 {/* Using a simple div stack for the icon, styled with Tailwind */}

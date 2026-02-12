@@ -3,9 +3,9 @@ import Navbar from './Navbar';
 function Hero() {
     return (
         <section>
-            <div className="bg-shift-left-mobile h-screen max-h-270 max-w-480 bg-[url('assets/team-app-hero-img.jpg')] bg-cover bg-center">
+            <div className="bg-shift-left-mobile flex h-screen max-h-270 max-w-480 flex-col bg-[url('assets/team-app-hero-img.jpg')] bg-cover bg-center">
                 <Navbar />
-                <div className='container mx-auto mt-40 flex flex-col justify-center px-8 text-white md:px-0'>
+                <div className='container mx-auto mt-40 flex flex-col justify-center px-8 text-white md:mt-0 md:px-5'>
                     <h1 className='mb-4 max-w-sm text-4xl md:text-5xl'>
                         Instant collaboration for remote teams
                     </h1>
