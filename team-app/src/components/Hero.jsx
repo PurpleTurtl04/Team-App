@@ -4,7 +4,7 @@ function Hero() {
     return (
         <section>
             <div className="bg-shift-left-mobile flex h-screen max-h-270 max-w-480 flex-col bg-[url('assets/team-app-hero-img.jpg')] bg-cover bg-center">
-                <div className='container mx-auto'>
+                <div className='3xl:px-15 container mx-auto'>
                     <Navbar />
                     <div className='mt-40 flex flex-col justify-center px-8 text-white md:mt-10'>
                         <h1 className='mb-4 max-w-xs text-4xl md:max-w-md md:text-5xl lg:max-w-xl lg:text-6xl/18'>
