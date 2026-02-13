@@ -1,5 +1,6 @@
 import './App.css';
 import Hero from './components/Hero';
+import MainAppContent from './components/MainAppContent';
 
 function App() {
     return (
@@ -7,7 +8,9 @@ function App() {
             <header>
                 <Hero />
             </header>
-            <main></main>
+            <main>
+                <MainAppContent />
+            </main>
         </div>
     );
 }
