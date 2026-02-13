@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 
 function App() {
     return (
-        <div className='font-cabin'>
+        <div className='font-cabin 3xl:container mx-auto'>
             <header>
                 <Hero />
             </header>
