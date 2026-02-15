@@ -4,7 +4,8 @@ import MainAppContent from './components/MainAppContent';
 
 function App() {
     return (
-        <div className='font-cabin 3xl:container mx-auto'>
+        // Consider adding 3xl:container class if that works better than max-w-7xl
+        <div className='font-cabin mx-auto max-w-7xl'>
             <header>
                 <Hero />
             </header>
