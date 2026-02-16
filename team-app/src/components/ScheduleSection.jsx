@@ -5,31 +5,33 @@ function ScheduleSection() {
     return (
         <div class='container mx-auto mb-20 flex flex-col gap-4 md:mb-40 md:flex-row'>
             {/* Column 1 Content */}
-            <div class='flex flex-1 flex-col items-center px-8 md:items-start md:justify-end'>
-                <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl'>
-                    Scheduling that actually works
-                </h2>
-                <p className='text-teamapp-grey max-w-105'>
-                    Integrated a Team calendar with your favorite calendar app,
-                    be it Google Calendar or iCal.
-                </p>
-                <p className='text-teamapp-grey max-w-105 pt-2'>
-                    Each team member works with their favorite calendar, while
-                    all the date is synced with the master calendar.
-                </p>
-                <a
-                    href='#'
-                    className='text-teamapp-blue mt-5 flex items-center gap-1 font-bold'
-                >
-                    Learn More{' '}
-                    <span>
-                        <img src={arrow} alt='blue arrow' />
-                    </span>
-                </a>
+            <div class='flex flex-1 flex-col items-center justify-center px-8 lg:items-end'>
+                <div className='flex flex-col items-center md:items-start'>
+                    <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
+                        Scheduling that actually works
+                    </h2>
+                    <p className='text-teamapp-grey max-w-105'>
+                        Integrated a Team calendar with your favorite calendar
+                        app, be it Google Calendar or iCal.
+                    </p>
+                    <p className='text-teamapp-grey max-w-105 pt-2'>
+                        Each team member works with their favorite calendar,
+                        while all the date is synced with the master calendar.
+                    </p>
+                    <a
+                        href='#'
+                        className='text-teamapp-blue mt-5 flex items-center gap-1 font-bold'
+                    >
+                        Learn More{' '}
+                        <span>
+                            <img src={arrow} alt='blue arrow' />
+                        </span>
+                    </a>
+                </div>
             </div>
 
             {/* Column 2 Content */}
-            <div class='mx-auto flex flex-1 justify-start px-8'>
+            <div class='flex flex-1 justify-center px-8 md:justify-start'>
                 <img
                     src={scheduleImage}
                     alt='woman sitting on a couch'
