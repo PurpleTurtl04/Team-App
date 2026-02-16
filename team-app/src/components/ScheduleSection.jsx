@@ -1,15 +1,10 @@
 import arrow from '../assets/arrow_right.svg';
-import taskImage from '../assets/task-section-img.png';
+import scheduleImage from '../assets/schedule-section-img.png';
 
-function TaskSection() {
+function ScheduleSection() {
     return (
-        <div class='container mx-auto flex flex-col-reverse gap-4 md:flex-row'>
+        <div class='container mx-auto flex flex-col gap-4 md:flex-row'>
             {/* Column 1 Content */}
-            <div class='flex-1 px-8'>
-                <img src={taskImage} alt='woman sitting on a couch' />
-            </div>
-
-            {/* Column 2 Content */}
             <div class='flex flex-1 flex-col items-center px-8 md:items-start md:justify-center'>
                 <h2 class='text-teamapp-darkblue mb-3 max-w-lg text-4xl lg:text-5xl'>
                     Simplest task management
@@ -30,8 +25,13 @@ function TaskSection() {
                     </span>
                 </a>
             </div>
+
+            {/* Column 2 Content */}
+            <div class='flex-1 px-8'>
+                <img src={scheduleImage} alt='woman sitting on a couch' />
+            </div>
         </div>
     );
 }
 
-export default TaskSection;
+export default ScheduleSection;
