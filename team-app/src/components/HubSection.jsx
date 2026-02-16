@@ -1,10 +1,10 @@
 function HubSection() {
     return (
-        <div className='3xl:container 3xl:mx-auto flex flex-col gap-6 overflow-hidden lg:flex-row lg:items-center lg:justify-between'>
+        <div className='3xl:container 3xl:mx-auto flex flex-col gap-6 overflow-hidden lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
             <div className='container mx-auto flex flex-col items-center justify-center md:max-w-100 lg:w-1/2'>
-                <h1 className='text-teamapp-darkblue mb-4 text-center text-4xl md:text-5xl lg:max-w-md lg:text-left lg:text-6xl/18'>
+                <h2 className='text-teamapp-darkblue mb-4 text-center text-4xl md:text-5xl lg:max-w-md lg:text-left lg:text-6xl/18'>
                     <span className='lg:-ml-1'>Your</span> hub for teamwork
-                </h1>
+                </h2>
                 <div className='flex flex-col items-center lg:items-start lg:pl-2'>
                     <p className='text-teamapp-grey max-w-82 md:max-w-100'>
                         Project discussions, important documents, free food

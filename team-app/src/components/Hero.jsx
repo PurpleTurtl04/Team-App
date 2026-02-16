@@ -1,9 +1,13 @@
+import heroImage from '../assets/team-app-hero-img.jpg';
 import Navbar from './Navbar';
 
 function Hero() {
     return (
         <section>
-            <div className="bg-shift-left-mobile flex h-screen max-h-270 max-w-480 flex-col bg-[url('assets/team-app-hero-img.jpg')] bg-cover bg-center">
+            <div
+                style={{ backgroundImage: `url(${heroImage})` }}
+                className='bg-shift-left-mobile flex h-screen max-h-270 max-w-480 flex-col bg-cover bg-center'
+            >
                 <div className='3xl:px-15 container mx-auto'>
                     <Navbar />
                     <div className='mt-40 flex flex-col justify-center px-8 text-white md:mt-10'>
