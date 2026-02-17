@@ -5,7 +5,7 @@ function ScheduleSection() {
     return (
         <div class='container mx-auto mb-20 flex flex-col gap-4 md:mb-40 md:flex-row'>
             {/* Column 1 Content */}
-            <div class='flex flex-1 flex-col items-center justify-center px-8 lg:items-end'>
+            <div class='flex flex-1 flex-col items-center justify-center px-8'>
                 <div className='flex flex-col items-center md:items-start'>
                     <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
                         Scheduling that actually works
@@ -31,7 +31,7 @@ function ScheduleSection() {
             </div>
 
             {/* Column 2 Content */}
-            <div class='flex flex-1 justify-center px-8 md:justify-start'>
+            <div class='flex flex-1 justify-center px-8'>
                 <img
                     src={scheduleImage}
                     alt='woman sitting on a couch'
