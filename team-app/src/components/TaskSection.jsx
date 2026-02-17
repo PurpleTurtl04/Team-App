@@ -19,7 +19,7 @@ function TaskSection() {
                     <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
                         Simplest task management
                     </h2>
-                    <p className='text-teamapp-grey max-w-105'>
+                    <p className='text-teamapp-grey max-w-105 text-justify md:text-left'>
                         Task management with Team is as simple as it gets. No
                         complicated layout and need for user training. Your team
                         members will intuitively know how to navigate the

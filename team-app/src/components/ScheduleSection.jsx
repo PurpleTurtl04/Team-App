@@ -6,15 +6,15 @@ function ScheduleSection() {
         <div class='container mx-auto mb-20 flex flex-col gap-4 md:mb-40 md:flex-row'>
             {/* Column 1 Content */}
             <div class='flex flex-1 flex-col items-center justify-center px-8'>
-                <div className='flex flex-col items-center md:items-start'>
+                <div className='flex flex-col items-center md:items-start md:text-left'>
                     <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
                         Scheduling that actually works
                     </h2>
-                    <p className='text-teamapp-grey max-w-105'>
+                    <p className='text-teamapp-grey max-w-105 text-justify md:text-left'>
                         Integrated a Team calendar with your favorite calendar
                         app, be it Google Calendar or iCal.
                     </p>
-                    <p className='text-teamapp-grey max-w-105 pt-2'>
+                    <p className='text-teamapp-grey max-w-105 pt-2 text-justify md:text-left'>
                         Each team member works with their favorite calendar,
                         while all the date is synced with the master calendar.
                     </p>

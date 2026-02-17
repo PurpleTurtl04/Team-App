@@ -6,7 +6,7 @@ import TestSection from './TestSection';
 function MainAppContent() {
     return (
         <section className='mt-20'>
-            {/* <HubSection /> */}
+            <HubSection />
             <TaskSection />
             <ScheduleSection />
         </section>
