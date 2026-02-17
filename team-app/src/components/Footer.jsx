@@ -3,7 +3,7 @@ function Footer() {
         <div className='bg-teamapp-footerblue pt-15 text-white'>
             <div className='container mx-auto max-w-7xl px-6 py-10'>
                 {/* Main Footer Section (Primary column + Four small columns) */}
-                <div className='flex flex-wrap justify-between gap-8'>
+                <div className='flex flex-wrap justify-between gap-4'>
                     {/* Primary Column (e.g., Logo, Description) */}
                     <div className='w-full text-center md:w-1/4 md:text-left'>
                         <h3 className='font-poppins text-3xl lg:pb-2'>
@@ -79,19 +79,20 @@ function Footer() {
                                 </ul>
                             </div>
                         ))}
-                        <ul>
+                        <div className='mb-6 flex w-1/2 flex-col items-center text-center md:mb-0 md:w-1/4 md:items-start md:text-left'>
                             <h4 className='mb-4 text-left text-lg'>
                                 Stay up to date
                             </h4>
-                            <p>Subscribe to our newsletter</p>
+                            <p className='text-teamapp-white/40'>
+                                Subscribe to our newsletter
+                            </p>
                             <input
                                 type='email'
                                 id='email-address'
-                                class='w-60 rounded-sm border border-gray-300 bg-gray-50 p-5 text-sm text-gray-900 shadow-lg'
+                                className='w-xs rounded-sm border border-gray-300 bg-gray-50 p-5 text-sm text-gray-900 shadow-lg'
                                 placeholder='name@example.com'
-                                required
                             />
-                        </ul>
+                        </div>
                     </div>
                 </div>
 

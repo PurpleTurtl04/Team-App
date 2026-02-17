@@ -22,9 +22,8 @@ function Hero() {
                             <input
                                 type='email'
                                 id='email-address'
-                                class='w-xs rounded-sm border border-gray-300 bg-gray-50 p-5 text-sm text-gray-900 shadow-lg'
+                                className='w-xs rounded-sm border border-gray-300 bg-gray-50 p-5 text-sm text-gray-900 shadow-lg'
                                 placeholder='name@example.com'
-                                required
                             />
                             <button class='group bg-teamapp-blue relative max-w-38 overflow-hidden rounded-sm p-5'>
                                 <span class='relative z-10'>
