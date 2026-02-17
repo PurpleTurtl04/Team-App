@@ -27,7 +27,7 @@ function TaskSection() {
                     </p>
                     <a
                         href='#'
-                        className='text-teamapp-blue mt-5 flex items-center gap-1 font-bold'
+                        className='text-teamapp-blue mt-5 flex items-center gap-1 font-bold transition duration-300 hover:scale-110'
                     >
                         Learn More{' '}
                         <span>
