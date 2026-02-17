@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import MainAppContent from './components/MainAppContent';
 
@@ -14,6 +15,9 @@ function App() {
                     <MainAppContent />
                 </main>
             </div>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 }
