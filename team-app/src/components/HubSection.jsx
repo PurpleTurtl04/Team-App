@@ -1,15 +1,39 @@
+import { useState, useEffect } from 'react';
+
 import dashboardImage from '../assets/dashboard-section-img.png';
+import dashboardLargeImage from '../assets/dashboard-section-large-img.png';
 
 function HubSection() {
+    const breakpoint = 1024;
+
+    const [screenSize, setScreenSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <div class='container mx-auto mb-20 flex flex-col gap-4 md:mb-35 lg:flex-row'>
+        <div class='container mx-auto mb-20 flex flex-col gap-4 overflow-hidden md:mb-35 lg:flex-row'>
             {/* Column 1 Content */}
             <div class='flex flex-1 flex-col items-center justify-center px-8'>
                 <div className='flex flex-col items-center lg:items-start'>
                     <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
                         <span className='lg:-ml-1'>Your</span> hub for teamwork
                     </h2>
-                    <p className='text-teamapp-grey max-w-88 text-justify lg:text-left'>
+                    <p className='text-teamapp-grey max-w-88 text-justify lg:max-w-105 lg:text-left'>
                         Project discussions, important documents, free food
                         announcements: they all live tidily together in Team.
                         With your team and information in one easily searchable
@@ -20,49 +44,17 @@ function HubSection() {
             </div>
 
             {/* Column 2 Content */}
-            <div class='flex flex-1 justify-center px-8 lg:translate-x-1/3'>
+            <div class='mr-1 flex flex-1 justify-center lg:mr-0'>
                 <img
-                    src={dashboardImage}
+                    src={
+                        screenSize.width < breakpoint
+                            ? dashboardImage
+                            : dashboardLargeImage
+                    }
                     alt='sample app dashboard'
-                    className='lg:max-w-120'
                 />
             </div>
         </div>
-        // <div className='3xl:container 3xl:mx-auto flex flex-col gap-6 overflow-hidden lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
-        //     <div className='container mx-auto flex flex-col items-center justify-center md:max-w-100 lg:w-1/2'>
-        //         <h2 className='text-teamapp-darkblue mb-4 text-center text-4xl md:text-5xl lg:max-w-md lg:text-left lg:text-6xl/18'>
-        //             <span className='lg:-ml-1'>Your</span> hub for teamwork
-        //         </h2>
-        //         <div className='flex flex-col items-center lg:items-start lg:pl-2'>
-        //             <p className='text-teamapp-grey max-w-82 md:max-w-100'>
-        //                 Project discussions, important documents, free food
-        //                 announcements: they all live tidily together in Team.
-        //                 With your team and information in one easily searchable
-        //                 place, collaborating online is as easy as collaborating
-        //                 in person.
-        //             </p>
-        //             <a
-        //                 href='#'
-        //                 className='text-teamapp-blue mt-4 flex items-center gap-1 font-bold'
-        //             >
-        //                 Learn More{' '}
-        //                 <span>
-        //                     <img
-        //                         src='src/assets/arrow_right.svg'
-        //                         alt='blue arrow'
-        //                     />
-        //                 </span>
-        //             </a>
-        //         </div>
-        //     </div>
-        //     <div className='lg:max-w-2/3'>
-        //         <img
-        //             src='src/assets/dashboard-section-img.png'
-        //             alt='Sample Team App Dashboard'
-        //             className='lg:translate-x-1/3'
-        //         />
-        //     </div>
-        // </div>
     );
 }
 
