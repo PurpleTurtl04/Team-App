@@ -26,11 +26,11 @@ function HubSection() {
     }, []);
 
     return (
-        <div class='mb-20 flex flex-col gap-4 overflow-hidden md:mb-35 lg:flex-row xl:container xl:mx-auto'>
+        <div className='mb-20 flex flex-col gap-4 overflow-hidden md:mb-35 lg:flex-row xl:container xl:mx-auto'>
             {/* Column 1 Content */}
-            <div class='flex flex-1 flex-col items-center justify-center px-8 lg:pl-0'>
+            <div className='flex flex-1 flex-col items-center justify-center px-8 lg:pl-0'>
                 <div className='flex flex-col items-center lg:ml-[10%] lg:items-start xl:ml-0'>
-                    <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-sm md:text-left lg:text-5xl/15'>
+                    <h2 className='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-sm md:text-left lg:text-5xl/15'>
                         <span className='lg:-ml-1'>Your</span> hub for teamwork
                     </h2>
                     <p className='text-teamapp-grey max-w-88 text-justify lg:max-w-105 lg:text-left'>
@@ -44,7 +44,7 @@ function HubSection() {
             </div>
 
             {/* Column 2 Content */}
-            <div class='mr-1 flex flex-1 justify-center lg:mr-0'>
+            <div className='mr-1 flex flex-1 justify-center lg:mr-0'>
                 <img
                     src={
                         screenSize.width < breakpoint

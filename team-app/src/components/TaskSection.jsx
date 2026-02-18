@@ -3,9 +3,9 @@ import taskImage from '../assets/task-section-img.png';
 
 function TaskSection() {
     return (
-        <div class='container mx-auto mb-20 flex flex-col-reverse gap-4 md:mb-40 md:flex-row'>
+        <div className='container mx-auto mb-20 flex flex-col-reverse gap-4 md:mb-40 md:flex-row'>
             {/* Column 1 Content */}
-            <div class='flex flex-1 justify-center px-8'>
+            <div className='flex flex-1 justify-center px-8'>
                 <img
                     src={taskImage}
                     alt='woman sitting on a couch'
@@ -14,9 +14,9 @@ function TaskSection() {
             </div>
 
             {/* Column 2 Content */}
-            <div class='flex flex-1 flex-col items-center justify-center px-8'>
+            <div className='flex flex-1 flex-col items-center justify-center px-8'>
                 <div className='flex flex-col items-center md:items-start'>
-                    <h2 class='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
+                    <h2 className='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
                         Simplest task management
                     </h2>
                     <p className='text-teamapp-grey max-w-105 text-justify md:text-left'>

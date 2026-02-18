@@ -25,11 +25,11 @@ function Hero() {
                                 className='w-xs rounded-sm border border-gray-300 bg-gray-50 p-5 text-sm text-gray-900 shadow-lg'
                                 placeholder='name@example.com'
                             />
-                            <button class='group bg-teamapp-blue relative max-w-38 overflow-hidden rounded-sm p-5'>
-                                <span class='relative z-10'>
+                            <button className='group bg-teamapp-blue relative max-w-38 overflow-hidden rounded-sm p-5'>
+                                <span className='relative z-10'>
                                     Get Early Access
                                 </span>
-                                <span class='absolute inset-0 bg-black opacity-0 transition-opacity duration-200 group-hover:opacity-20'></span>
+                                <span className='absolute inset-0 bg-black opacity-0 transition-opacity duration-200 group-hover:opacity-20'></span>
                             </button>
                         </div>
                     </div>
