@@ -1,3 +1,30 @@
+const footerData = [
+    {
+        title: 'Company',
+        links: ['About Us', 'Careers', 'Support', 'Pricing'],
+        contacts: [],
+    },
+    {
+        title: 'Features',
+        links: [
+            'Screen Sharing',
+            'iOS & Android Apps',
+            'File Sharing',
+            'User Management',
+        ],
+        contacts: [],
+    },
+    {
+        title: 'Contact Us',
+        links: [],
+        contacts: [
+            'info@teamapp.com',
+            '1-800-200-300',
+            '1010 Sunset Blv. Palo Alto, California',
+        ],
+    },
+];
+
 function Footer() {
     return (
         <div className='bg-teamapp-footerblue pt-15 text-white'>
@@ -19,37 +46,7 @@ function Footer() {
 
                     {/* Four Evenly Distributed Columns */}
                     <div className='flex w-full flex-wrap justify-between md:w-2/3'>
-                        {[
-                            {
-                                title: 'Company',
-                                links: [
-                                    'About Us',
-                                    'Careers',
-                                    'Support',
-                                    'Pricing',
-                                ],
-                                contacts: [],
-                            },
-                            {
-                                title: 'Features',
-                                links: [
-                                    'Screen Sharing',
-                                    'iOS & Android Apps',
-                                    'File Sharing',
-                                    'User Management',
-                                ],
-                                contacts: [],
-                            },
-                            {
-                                title: 'Contact Us',
-                                links: [],
-                                contacts: [
-                                    'info@teamapp.com',
-                                    '1-800-200-300',
-                                    '1010 Sunset Blv. Palo Alto, California',
-                                ],
-                            },
-                        ].map((section, index) => (
+                        {footerData.map((section, index) => (
                             <div
                                 key={index}
                                 className='mb-6 flex w-1/2 flex-col items-center text-center md:mb-0 md:w-1/4 md:items-start md:text-left'
