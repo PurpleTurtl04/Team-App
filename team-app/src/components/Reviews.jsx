@@ -41,14 +41,16 @@ function Reviews() {
                 {reviewsData.map((review, index) => (
                     <div
                         key={index}
-                        className={`text-teamapp-grey flex max-w-sm flex-col rounded-lg border border-gray-200 bg-white p-6 drop-shadow-md ${review.grid}`}
+                        className={`text-teamapp-grey flex max-w-sm flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 drop-shadow-md ${review.grid}`}
                     >
-                        <img
-                            src={stars}
-                            alt='golden stars'
-                            className='mt-10 mb-6 w-25'
-                        />
-                        <p>{review.comment}</p>
+                        <div>
+                            <img
+                                src={stars}
+                                alt='golden stars'
+                                className='mt-10 mb-6 w-25'
+                            />
+                            <p>{review.comment}</p>
+                        </div>
                         <div className='mt-20 mb-6 flex gap-5'>
                             <img
                                 src={review.image}
