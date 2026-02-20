@@ -85,7 +85,7 @@ function Footer() {
                             <input
                                 type='email'
                                 id='email-address'
-                                className='relative w-64 rounded-sm bg-white/10 p-5 text-sm text-white/80 shadow-lg'
+                                className='relative w-60 rounded-sm bg-white/10 p-5 text-sm text-white/80 shadow-lg xl:w-64'
                                 placeholder='name@example.com'
                             />
                             <button

@@ -10,11 +10,11 @@ function ScheduleSection() {
                     <h2 className='text-teamapp-darkblue mb-4 max-w-xs text-center text-4xl md:max-w-md md:text-left lg:text-5xl/15'>
                         Scheduling that actually works
                     </h2>
-                    <p className='text-teamapp-grey max-w-105 text-justify md:text-left'>
+                    <p className='text-teamapp-grey xs:text-justify max-w-105 text-left md:text-left'>
                         Integrated a Team calendar with your favorite calendar
                         app, be it Google Calendar or iCal.
                     </p>
-                    <p className='text-teamapp-grey max-w-105 pt-2 text-justify md:text-left'>
+                    <p className='text-teamapp-grey xs:text-justify max-w-105 pt-2 text-left md:text-left'>
                         Each team member works with their favorite calendar,
                         while all the date is synced with the master calendar.
                     </p>
