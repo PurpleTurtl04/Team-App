@@ -29,9 +29,8 @@ function Footer() {
     return (
         <div className='bg-teamapp-footerblue pt-15 text-white'>
             <div className='3xl:px-15 container mx-auto px-6 py-10'>
-                {/* Main Footer Section (Primary column + Four small columns) */}
                 <div className='grid grid-cols-1 gap-4 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8'>
-                    {/* Primary Column (e.g., Logo, Description) */}
+                    {/* Primary Column */}
                     <div className='col-span-1 mb-4 text-center sm:col-span-4 md:col-span-3 lg:col-span-4 lg:text-left xl:col-span-2'>
                         <h3 className='font-poppins text-3xl xl:pb-2'>
                             <span className='font-bold text-white'>team</span>
@@ -43,6 +42,7 @@ function Footer() {
                             Collaboration platform for modern teams.
                         </p>
                     </div>
+                    {/* Three Columns */}
                     {footerData.map((section, index) => (
                         <div
                             key={index}
@@ -73,6 +73,7 @@ function Footer() {
                             </ul>
                         </div>
                     ))}
+                    {/* Subscribe Column */}
                     <div className='col-span-1 mb-6 flex flex-col items-center text-center sm:col-span-2 md:col-span-3 md:mt-10 md:mb-0 md:text-left lg:col-span-1 lg:mt-0 lg:items-start lg:text-left xl:col-start-7'>
                         <h4 className='mb-2 text-center text-[18px] xl:text-left'>
                             Stay up to date
