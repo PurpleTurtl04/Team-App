@@ -86,7 +86,7 @@ function Footer() {
                         <input
                             type='email'
                             id='email-address'
-                            className='w-64 rounded-sm border border-gray-300 bg-gray-50 p-5 text-sm text-gray-900 shadow-lg'
+                            className='text-teamapp-grey w-64 rounded-sm bg-white/10 p-5 text-sm shadow-lg'
                             placeholder='name@example.com'
                         />
                     </div>
