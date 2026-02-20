@@ -1,10 +1,5 @@
 const footerData = [
     {
-        title: 'Company',
-        links: ['About Us', 'Careers', 'Support', 'Pricing'],
-        contacts: [],
-    },
-    {
         title: 'Features',
         links: [
             'Screen Sharing',
@@ -12,6 +7,11 @@ const footerData = [
             'File Sharing',
             'User Management',
         ],
+        contacts: [],
+    },
+    {
+        title: 'Company',
+        links: ['About Us', 'Careers', 'Support', 'Pricing'],
         contacts: [],
     },
     {
@@ -28,11 +28,11 @@ const footerData = [
 function Footer() {
     return (
         <div className='bg-teamapp-footerblue pt-15 text-white'>
-            <div className='container mx-auto max-w-7xl px-6 py-10'>
+            <div className='3xl:px-15 container mx-auto px-6 py-10'>
                 {/* Main Footer Section (Primary column + Four small columns) */}
                 <div className='grid grid-cols-1 gap-4 sm:grid-cols-4 lg:grid-cols-8'>
                     {/* Primary Column (e.g., Logo, Description) */}
-                    <div className='col-span-1 text-center sm:col-span-4 md:text-left lg:col-span-2'>
+                    <div className='col-span-1 mb-4 text-center sm:col-span-4 lg:col-span-2 lg:text-left'>
                         <h3 className='font-poppins text-3xl lg:pb-2'>
                             <span className='font-bold text-white'>team</span>
                             <span className='text-teamapp-blue font-bold'>
@@ -49,18 +49,18 @@ function Footer() {
                     {footerData.map((section, index) => (
                         <div
                             key={index}
-                            className='col-span-1 mb-6 min-w-32 text-center sm:col-span-2 md:mb-0 lg:col-span-1 lg:text-left'
+                            className='col-span-1 mb-2 min-w-32 text-center sm:col-span-2 md:mb-0 lg:col-span-1 lg:text-left'
                         >
-                            <h4 className='mb-4 text-center text-lg xl:text-left'>
+                            <h4 className='mb-2 text-center text-[18px] lg:text-left'>
                                 {section.title}
                             </h4>
-                            <ul className='lg:items-left flex flex-col items-center gap-3'>
+                            <ul className='flex flex-col items-center gap-1 lg:items-start'>
                                 {section.links.length > 0
                                     ? section.links.map((link) => (
                                           <li key={link}>
                                               <a
                                                   href=''
-                                                  className='text-teamapp-white/40 hover:text-teamapp-yellow transition duration-200 ease-in-out'
+                                                  className='text-teamapp-white/40 hover:text-teamapp-yellow text-[14px] transition duration-200 ease-in-out'
                                               >
                                                   {link}
                                               </a>
@@ -68,7 +68,7 @@ function Footer() {
                                       ))
                                     : section.contacts.map((contact) => (
                                           <li key={contact}>
-                                              <p className='text-teamapp-white/40 hover:text-teamapp-yellow transition duration-200 ease-in-out'>
+                                              <p className='text-teamapp-white/40 hover:text-teamapp-yellow text-[14px] transition duration-200 ease-in-out'>
                                                   {contact}
                                               </p>
                                           </li>
@@ -76,11 +76,11 @@ function Footer() {
                             </ul>
                         </div>
                     ))}
-                    <div className='col-span-1 mb-6 text-center sm:col-span-2 md:mb-0 md:text-left lg:col-span-2 lg:col-start-7'>
-                        <h4 className='mb-4 text-center text-lg xl:text-left'>
+                    <div className='col-span-1 mb-6 flex flex-col items-center text-center sm:col-span-2 md:mb-0 md:text-left lg:col-span-2 lg:col-start-7 lg:items-start lg:text-left'>
+                        <h4 className='mb-2 text-center text-[18px] lg:mb-4 xl:text-left'>
                             Stay up to date
                         </h4>
-                        <p className='text-teamapp-white/40'>
+                        <p className='text-teamapp-white/40 text-[14px]'>
                             Subscribe to our newsletter
                         </p>
                         <input

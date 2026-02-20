@@ -37,11 +37,11 @@ function Reviews() {
                 What people say about{' '}
                 <span className='text-teamapp-blue font-semibold'>Team</span>
             </h2>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-6 lg:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-6 lg:grid-cols-3 xl:gap-10 2xl:gap-20'>
                 {reviewsData.map((review, index) => (
                     <div
                         key={index}
-                        className={`text-teamapp-grey flex max-w-sm flex-col border border-gray-200 bg-white p-6 drop-shadow-md ${review.grid}`}
+                        className={`text-teamapp-grey flex max-w-sm flex-col rounded-lg border border-gray-200 bg-white p-6 drop-shadow-md ${review.grid}`}
                     >
                         <img
                             src={stars}

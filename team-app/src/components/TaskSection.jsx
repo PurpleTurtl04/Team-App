@@ -9,7 +9,7 @@ function TaskSection() {
                 <img
                     src={taskImage}
                     alt='woman sitting on a couch'
-                    className='max-w-108 md:max-w-88 lg:max-w-120'
+                    className='max-w-108 rounded-lg md:max-w-88 lg:max-w-120'
                 />
             </div>
 

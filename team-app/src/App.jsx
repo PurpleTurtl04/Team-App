@@ -14,10 +14,10 @@ function App() {
                 <main>
                     <MainAppContent />
                 </main>
+                <footer>
+                    <Footer />
+                </footer>
             </div>
-            <footer>
-                <Footer />
-            </footer>
         </div>
     );
 }
