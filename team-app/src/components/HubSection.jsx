@@ -4,7 +4,8 @@ import dashboardImage from '../assets/dashboard-section-img.png';
 import dashboardLargeImage from '../assets/dashboard-section-large-img.png';
 
 function HubSection() {
-    const breakpoint = 1024;
+    const breakpointSmall = 1024;
+    const breakpointLarge = 1536;
 
     const [screenSize, setScreenSize] = useState({
         width: window.innerWidth,
@@ -26,7 +27,7 @@ function HubSection() {
     }, []);
 
     return (
-        <div className='mb-20 flex flex-col gap-4 overflow-hidden md:mb-35 lg:flex-row xl:container xl:mx-auto'>
+        <div className='3xl:container 3xl:mx-auto mb-20 flex flex-col gap-4 overflow-hidden md:mb-35 lg:flex-row'>
             {/* Column 1 Content */}
             <div className='flex flex-1 flex-col items-center justify-center px-8 lg:pl-0'>
                 <div className='flex flex-col items-center lg:ml-[10%] lg:items-start xl:ml-0'>
@@ -47,7 +48,8 @@ function HubSection() {
             <div className='mr-1 flex flex-1 justify-center lg:mr-0'>
                 <img
                     src={
-                        screenSize.width < breakpoint
+                        screenSize.width < breakpointSmall ||
+                        screenSize.width > breakpointLarge
                             ? dashboardImage
                             : dashboardLargeImage
                     }

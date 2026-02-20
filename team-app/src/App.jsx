@@ -7,7 +7,7 @@ function App() {
     return (
         // Consider adding 3xl:container class if that works better than max-w-7xl
         <div className='font-cabin bg-teamapp-white'>
-            <div className='mx-auto max-w-7xl'>
+            <div className='3xl:container mx-auto'>
                 <header>
                     <Hero />
                 </header>
