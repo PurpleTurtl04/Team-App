@@ -15,7 +15,6 @@ function HamburgerMenu() {
                 className='block py-3 md:hidden'
                 aria-label='Toggle menu'
             >
-                {/* Using a simple div stack for the icon, styled with Tailwind */}
                 <div
                     className={`h-0.5 w-6 bg-white transition duration-300 ease-in-out ${isOpen ? 'translate-y-1.5 rotate-45 transform' : ''}`}
                 ></div>

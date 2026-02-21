@@ -29,7 +29,7 @@ const reviewsData = [
         grid: 'col-span-1 md:col-span-4 md:col-start-2 lg:col-span-1 ml-0 md:ml-12 lg:ml-0',
     },
 ];
-// mb-10 mb-15
+
 function Reviews() {
     return (
         <div className='container mx-auto mb-40 flex flex-col items-center px-8 lg:items-start'>
