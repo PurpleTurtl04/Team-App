@@ -2,7 +2,6 @@ import HubSection from './HubSection';
 import Reviews from './Reviews';
 import ScheduleSection from './ScheduleSection';
 import TaskSection from './TaskSection';
-import TestSection from './TestSection';
 
 function MainAppContent() {
     return (

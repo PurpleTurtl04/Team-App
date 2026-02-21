@@ -78,7 +78,7 @@ function Footer() {
                         <h4 className='mb-2 text-center text-[18px] xl:text-left'>
                             Stay up to date
                         </h4>
-                        <p className='text-teamapp-white/40 min-w-60 text-center text-[14px] lg:text-left'>
+                        <p className='text-teamapp-white/40 min-w-60 pb-1 text-center text-[14px] lg:text-left'>
                             Subscribe to our newsletter
                         </p>
                         <div className='relative'>
@@ -90,7 +90,7 @@ function Footer() {
                             />
                             <button
                                 type='submit'
-                                class='hover:text-teamapp-yellow absolute inset-y-0 right-0 flex items-center pr-3 text-white/60'
+                                class='hover:text-teamapp-yellow absolute inset-y-0 right-0 flex items-center pr-3 text-white/60 hover:scale-110'
                             >
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'

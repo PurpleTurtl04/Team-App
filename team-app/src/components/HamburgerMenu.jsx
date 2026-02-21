@@ -35,7 +35,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-blue/90 transition duration-150'
+                            className='rounded-xl bg-transparent px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-white/20'
                         >
                             Product
                         </a>
@@ -43,7 +43,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-blue/90 transition duration-150'
+                            className='rounded-xl bg-transparent px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-white/20'
                         >
                             Blog
                         </a>
@@ -51,7 +51,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-blue/90 transition duration-150'
+                            className='rounded-xl bg-transparent px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-white/20'
                         >
                             Contact
                         </a>
@@ -59,7 +59,7 @@ function HamburgerMenu() {
                     <li>
                         <a
                             href='#'
-                            className='hover:text-teamapp-blue/90 transition duration-150'
+                            className='rounded-xl bg-transparent px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-white/20'
                         >
                             Log In
                         </a>
