@@ -8,7 +8,7 @@ const reviewsData = [
         name: 'Amy Goldberg',
         title: 'COO at Slack',
         comment:
-            'Faucibus. At penatibus ad cubilia risus senectus varius sociis suspendisse integer suspendisse turpis senectus pellentesque nibh iaculis.',
+            'Team has completely streamlined how we run meetings and manage cross-department tasks. Visibility, accountability, and execution have all improved. It’s become an essential part of our operations.',
         image: amyGoldberg,
         grid: 'col-span-1 md:col-span-3 lg:col-span-1',
     },
@@ -16,7 +16,7 @@ const reviewsData = [
         name: 'Lina Sloan',
         title: 'Content Writer at Uber',
         comment:
-            'Eros nulla mollis nec tortor. Eu class ante accumsan habitant morbi neque hac purus magnis varius pulvinar hac pede magnis.',
+            'I love how easy Team makes it to track assignments and deadlines. Meeting notes and tasks are all in one place, which keeps my workflow organized and stress-free.',
         image: linaSloan,
         grid: 'col-span-1 md:col-span-3 md:col-start-4 lg:col-span-1',
     },
@@ -24,7 +24,7 @@ const reviewsData = [
         name: 'Jon Jandali',
         title: 'CTO at Loom',
         comment:
-            'Sociosqu habitasse vulputate odio nisi phasellus. Cras luctus sit leo pharetra nec semper commodo rutrum aptent feugiat.',
+            'Team delivers exactly what we need—efficient scheduling, clear task ownership, and seamless collaboration. It’s intuitive, reliable, and integrates smoothly into our daily processes',
         image: jonJandali,
         grid: 'col-span-1 md:col-span-4 md:col-start-2 lg:col-span-1 ml-0 md:ml-12 lg:ml-0',
     },
